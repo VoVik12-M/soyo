@@ -6,7 +6,7 @@ import Footer from "./components/Footer_foto";
 
 export default function Home() {
   return (
-    <div>
+    <div className="Osnova">
         <Header />
         <Aside />
         <AsideTwo />
