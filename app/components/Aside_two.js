@@ -1,4 +1,4 @@
-export default function Header() {
+export default function AsideTwo() {
     return (
         <h1>Третій блок</h1>
     );
