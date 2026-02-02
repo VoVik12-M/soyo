@@ -1,5 +1,5 @@
 export default function Aside() {
     return (
-        <h1>Другий блок</h1>
+        <div className="Aside">Другий блок</div>
     );
 }
