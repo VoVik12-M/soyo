@@ -4,6 +4,14 @@
 // Кольори
 $soyo: #f8dd10;
 
+// Шаблони
+%styleOswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .Osnova {
   display: flex;
   flex-direction: column;
@@ -21,8 +29,8 @@ $soyo: #f8dd10;
   // height: 150px;
   & .Face {
     display: grid;
-    grid-template-columns: 1fr 1200px 1fr;
-    grid-template-rows: 200px;
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: 175px;
     & .block_1 {
       display: grid;
       grid-template-columns: 1fr;
@@ -30,8 +38,8 @@ $soyo: #f8dd10;
       & .media {
         box-sizing: border-box;
         display: flex;
-        justify-content: center;
-        padding: 36px 0 0 0;
+        justify-content: end;
+        padding: 25px 0 0 0;
         & img {
           width: 26px;
           height: 26px;
@@ -40,16 +48,19 @@ $soyo: #f8dd10;
       }
       & .adresa {
         display: flex;
-        flex-direction: column;
+        justify-content: end;
+        box-sizing: border-box;
+        padding-right: 40px;
+        & div {
+          display: flex;
+          flex-direction: column;
+        }
         & p {
           display: flex;
           justify-content: center;
           margin: 0;
           color: $soyo;
-          font-family: "Oswald", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: 500;
-          font-style: normal;
+          @extend %styleOswald;
           font-size: 19px;
         }
         & p:nth-of-type(1) {
@@ -73,9 +84,13 @@ $soyo: #f8dd10;
       }
       & div:nth-of-type(2) {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
+        box-sizing: border-box;
         & p {
-          margin: 0;
+          margin: 25;
+          font-size: 24px;
+          color: $soyo;
+          @extend %styleOswald
         }
       }
     }
@@ -83,10 +98,25 @@ $soyo: #f8dd10;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
+      & div:nth-of-type(1) {
+        display: flex;
+        gap: 14px;
+        align-items: end;
+        color: $soyo;
+        @extend %styleOswald
+      }
+      & div:nth-of-type(2) {
+        display: flex;
+        gap: 14px;
+        align-items: baseline;
+        color: $soyo;
+        @extend %styleOswald
+      }
+      & p {
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+      }
     }
   }
 }
 
-// .Aside {
-//   margin: 150px 0 0 0;
-// }

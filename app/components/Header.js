@@ -12,9 +12,11 @@ export default function Header() {
                         <img src='/logo_yellow/tik-tok_yellow.png' alt="logo"/>
                     </div>
                     <div className="adresa">
-                        <p>м. Тернопіль</p>
-                        <p>вул. Медова 12</p>
-                        <p>{viasan}</p>
+                        <div>
+                            <p>м. Тернопіль</p>
+                            <p>вул. Медова 12</p>
+                            <p>{viasan}</p>
+                        </div>
                     </div>
                 </div>
                 <div className="block_2">
