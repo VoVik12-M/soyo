@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-.Header .Face .block_3 div:nth-of-type(2), .Header .Face .block_3 div:nth-of-type(1), .Header .Face .block_2 div:nth-of-type(2) p, .Header .Face .block_1 .adresa p {
+.Header .Face .block_3 div:nth-of-type(2), .Header .Face .block_3 div:nth-of-type(1), .Header .Face .block_2 div:nth-of-type(2) a, .Header .Face .block_1 .adresa p {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -79,7 +79,8 @@
   justify-content: center;
   box-sizing: border-box;
 }
-.Header .Face .block_2 div:nth-of-type(2) p {
+.Header .Face .block_2 div:nth-of-type(2) a {
+  text-decoration: none;
   margin: 25;
   font-size: 24px;
   color: #f8dd10;
@@ -104,4 +105,22 @@
 .Header .Face .block_3 p {
   margin: 10px 0 10px 0;
   font-size: 20px;
+}
+
+.knopka1 {
+  position: relative;
+}
+
+.efectu {
+  position: absolute;
+  background: red;
+  bottom: 0;
+  left: -7px;
+  width: 10px;
+  height: 10px;
+  transition: height 2s ease 0s;
+}
+
+.efectu2 {
+  height: 40px;
 }/*# sourceMappingURL=globals.css.map */

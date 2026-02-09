@@ -1,5 +1,21 @@
+"use client";
+
+import { useRef, useState } from "react";
+
 export default function Header() {
     const viasan = "(Віасан)"
+
+    // const[efe, setEfe] = useState(false);
+
+    const efect1 = useRef();
+
+    function myclik() {
+        efect1.current.classList.toggle("efectu2");
+    }
+
+    function myclik2() {
+        efect1.current.classList.toggle("efectu2");
+    }
 
     return (
         <div className="Header">
@@ -25,11 +41,17 @@ export default function Header() {
                         {/* <Image src='/public/img/Logo.png' alt="logo" width={200} height={200}/> */}
                     </div>
                     <div>
-                        <p>СТИЛІ</p>
-                        <p>ПЕДАГОГИ</p>
-                        <p>РОЗКЛАД</p>
-                        <p>ЗАЛ</p>
-                        <p>ЦІНИ</p>
+                        <a className="knopka1" onMouseEnter={myclik} onMouseLeave={myclik2} href="https://www.youtube.com/watch?v=k8svrGotYfE">
+                            <span ref={efect1} className="efectu"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            СТИЛІ
+                        </a>
+                        <a href="">ПЕДАГОГИ</a>
+                        <a href="">РОЗКЛАД</a>
+                        <a href="">ЗАЛ</a>
+                        <a href="">ЦІНИ</a>
                     </div>
                 </div>
                 <div className="block_3">

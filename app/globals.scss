@@ -12,6 +12,7 @@ $soyo: #f8dd10;
   font-style: normal;
 }
 
+
 .Osnova {
   display: flex;
   flex-direction: column;
@@ -86,7 +87,8 @@ $soyo: #f8dd10;
         display: flex;
         justify-content: center;
         box-sizing: border-box;
-        & p {
+        & a {
+          text-decoration: none;
           margin: 25;
           font-size: 24px;
           color: $soyo;
@@ -120,3 +122,20 @@ $soyo: #f8dd10;
   }
 }
 
+.knopka1 {
+  position: relative;
+}
+
+.efectu {
+  position: absolute;
+  background: red;
+  bottom: 0;
+  left: -7px;
+  width: 10px;
+  height: 10px;
+  transition: height 2s ease 0s;
+}
+
+.efectu2 {
+  height: 40px;
+}
