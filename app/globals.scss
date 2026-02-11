@@ -1,5 +1,5 @@
+@use "./css_style/knopku_header";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-// #f8dd10
 
 // Кольори
 $soyo: #f8dd10;
@@ -88,6 +88,7 @@ $soyo: #f8dd10;
         justify-content: center;
         box-sizing: border-box;
         & a {
+          position: relative;
           text-decoration: none;
           margin: 25;
           font-size: 24px;
@@ -122,20 +123,3 @@ $soyo: #f8dd10;
   }
 }
 
-.knopka1 {
-  position: relative;
-}
-
-.efectu {
-  position: absolute;
-  background: red;
-  bottom: 0;
-  left: -7px;
-  width: 10px;
-  height: 10px;
-  transition: height 2s ease 0s;
-}
-
-.efectu2 {
-  height: 40px;
-}
