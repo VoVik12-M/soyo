@@ -36,7 +36,7 @@
   height: 1px;
   transition: width 0.5s ease 0s;
   position: absolute;
-  bottom: 5px;
+  bottom: 3px;
   left: -12px;
 }
 
@@ -96,7 +96,7 @@
   height: 1px;
   transition: width 0.5s ease 0s;
   position: absolute;
-  bottom: 5px;
+  bottom: 3px;
   left: -12px;
 }
 
@@ -156,7 +156,7 @@
   height: 1px;
   transition: width 0.5s ease 0s;
   position: absolute;
-  bottom: 5px;
+  bottom: 3px;
   left: -12px;
 }
 
@@ -216,7 +216,7 @@
   height: 1px;
   transition: width 0.5s ease 0s;
   position: absolute;
-  bottom: 5px;
+  bottom: 3px;
   left: -12px;
 }
 
@@ -276,7 +276,7 @@
   height: 1px;
   transition: width 0.5s ease 0s;
   position: absolute;
-  bottom: 5px;
+  bottom: 3px;
   left: -12px;
 }
 
@@ -321,8 +321,8 @@
 }
 .Header .Face {
   display: grid;
-  grid-template-columns: 1fr 1000px 1fr;
-  grid-template-rows: 175px;
+  grid-template-columns: 1fr minmax(350px, 1000px) 1fr;
+  grid-template-rows: 150px;
 }
 .Header .Face .block_1 {
   display: grid;
@@ -333,7 +333,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: end;
-  padding: 25px 0 0 0;
+  padding: 14px 0 0 0;
 }
 .Header .Face .block_1 .media img {
   width: 26px;
@@ -347,6 +347,8 @@
   padding-right: 40px;
 }
 .Header .Face .block_1 .adresa div {
+  position: relative;
+  bottom: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -371,6 +373,8 @@
   justify-items: center;
 }
 .Header .Face .block_2 img {
+  position: relative;
+  top: 10px;
   width: 160px;
   height: 70px;
 }
@@ -406,4 +410,10 @@
 .Header .Face .block_3 p {
   margin: 10px 0 10px 0;
   font-size: 20px;
+}
+
+@media (max-width: 970px) {
+  .Header .Face .block_3 p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=globals.css.map */
