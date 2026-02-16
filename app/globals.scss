@@ -8,12 +8,38 @@
   background-color: red;
   width: 100%;
   height: 150px;
+  top: 0;
+  left: 0;
   & .Face {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas: 
+      "adresa nomeru nomeru"
+      "media logo logo"
+      "main main main";
+    // grid-template-areas: 
+    //   "media logo nomeru"
+    //   "adresa main nomeru";
+    & .Adresa {
+      grid-area: adresa;
+      background: black;
+    }
+    & .Nomeru {
+      grid-area: nomeru;
+      background: green;
+    }
+    & .Media {
+      grid-area: media;
+      background: blue;
+    }
+    & .Logo {
+      grid-area: logo;
+      background: pink;
+    }
+    & .Main {
+      grid-area: main;
+      background: yellow;
+    }
   }
-}
-
-.Aside {
-  margin: 150px 0 0 0;
 }
