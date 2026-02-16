@@ -5,12 +5,14 @@ export default function Header() {
         <div className="Header">
             <div className="Face">
                 <div className="Adresa">
-                    <p>м. Тернопіль</p>
-                    <p>вул. Медова 12</p>
-                    <p>{viasan}</p>
+                    <div>
+                        <p>м. Тернопіль</p>
+                        <p>вул. Медова 12</p>
+                        <p>{viasan}</p>
+                    </div>
                 </div>
                 <div className="Nomeru">
-                <div>
+                    <div>
                         <p>Назар:</p>
                         <p>+380980466115</p>
                     </div>

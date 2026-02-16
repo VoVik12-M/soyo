@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+.Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .Osnova {
   display: flex;
   flex-direction: column;
@@ -6,7 +13,7 @@
 
 .Header {
   position: fixed;
-  background-color: red;
+  background-color: #808080;
   width: 100%;
   height: 150px;
   top: 0;
@@ -20,20 +27,62 @@
 }
 .Header .Face .Adresa {
   grid-area: adresa;
+  display: flex;
+  justify-content: end;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+.Header .Face .Adresa div {
+  position: relative;
+  bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.Header .Face .Adresa p {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: #f8dd10;
+  font-size: 19px;
+}
+.Header .Face .Adresa p:nth-of-type(1) {
+  margin: -12px 0 0 0;
 }
 .Header .Face .Nomeru {
   grid-area: nomeru;
-  background: green;
+}
+.Header .Face .Nomeru div:nth-of-type(1) {
+  display: flex;
+  gap: 14px;
+  align-items: end;
+  color: #f8dd10;
+}
+.Header .Face .Nomeru div:nth-of-type(2) {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  color: #f8dd10;
+}
+.Header .Face .Nomeru p {
+  margin: 10px 0 10px 0;
+  font-size: 20px;
 }
 .Header .Face .Media {
   grid-area: media;
-  background: blue;
 }
 .Header .Face .Logo {
   grid-area: logo;
-  background: pink;
 }
 .Header .Face .Main {
   grid-area: main;
-  background: yellow;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.Header .Face .Main a {
+  position: relative;
+  text-decoration: none;
+  margin: 25;
+  font-size: 24px;
+  color: #f8dd10;
 }/*# sourceMappingURL=globals.css.map */

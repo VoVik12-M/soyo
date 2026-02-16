@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <div className="Osnova">
         <Header />
-        <Aside />
+        {/* <Aside />
         <AsideTwo />
         <AsideThree />
-        <Footer />
+        <Footer /> */}
     </div>
   );
 }
