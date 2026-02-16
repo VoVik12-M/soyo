@@ -12,15 +12,20 @@
   left: 0;
   & .Face {
     display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: 50px 50px 50px;
+
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px 50px;
-    grid-template-areas: 
-      "adresa nomeru nomeru"
-      "media logo logo"
-      "main main main";
+    grid-template-rows: 50px 50px;
+
     // grid-template-areas: 
-    //   "media logo nomeru"
-    //   "adresa main nomeru";
+    //   "adresa nomeru nomeru"
+    //   "media logo logo"
+    //   "main main main";
+
+    grid-template-areas: 
+      "media logo nomeru"
+      "adresa main nomeru";
     & .Adresa {
       grid-area: adresa;
       background: black;
