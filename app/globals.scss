@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+// Кольори
+$soyo: #f8dd10;
+
+// Шаблони
+%styleOswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .Osnova {
   display: flex;
   flex-direction: column;
@@ -15,8 +29,8 @@
     // grid-template-columns: 1fr 1fr 1fr;
     // grid-template-rows: 50px 50px 50px;
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px;
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: 75px 75px;
 
     // grid-template-areas: 
     //   "adresa nomeru nomeru"
@@ -28,7 +42,6 @@
       "adresa main nomeru";
     & .Adresa {
       grid-area: adresa;
-      background: black;
     }
     & .Nomeru {
       grid-area: nomeru;

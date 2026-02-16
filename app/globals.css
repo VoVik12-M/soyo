@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 .Osnova {
   display: flex;
   flex-direction: column;
@@ -13,13 +14,12 @@
 }
 .Header .Face {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px;
+  grid-template-columns: 1fr 1000px 1fr;
+  grid-template-rows: 75px 75px;
   grid-template-areas: "media logo nomeru" "adresa main nomeru";
 }
 .Header .Face .Adresa {
   grid-area: adresa;
-  background: black;
 }
 .Header .Face .Nomeru {
   grid-area: nomeru;
