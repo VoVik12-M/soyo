@@ -14,6 +14,24 @@ $soyo: #f8dd10;
   font-style: normal;
 }
 
+@mixin grid1 {
+  grid-template-columns: 1fr minmax(565px, 1000px) 1fr;
+  grid-template-rows: 75px 75px;
+  grid-template-areas: 
+    "media logo nomeru"
+    "adresa main nomeru";
+}
+
+@mixin grid2 {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px;
+      grid-template-areas: 
+    "adresa nomeru nomeru"
+    "media logo logo"
+    "main main main";
+}
+
+// Блок Голова
 .Osnova {
   display: flex;
   flex-direction: column;
@@ -28,21 +46,7 @@ $soyo: #f8dd10;
   left: 0;
   & .Face {
     display: grid;
-    // grid-template-columns: 1fr 1fr 1fr;
-    // grid-template-rows: 50px 50px 50px;
-
-    grid-template-columns: 1fr 1000px 1fr;
-    grid-template-rows: 75px 75px;
-
-    // grid-template-areas: 
-    //   "adresa nomeru nomeru"
-    //   "media logo logo"
-    //   "main main main";
-
-    grid-template-areas: 
-      "media logo nomeru"
-      "adresa main nomeru";
-
+    @include grid1;
     & .Adresa {
       grid-area: adresa;
       display: flex;
@@ -77,14 +81,20 @@ $soyo: #f8dd10;
         gap: 14px;
         align-items: end;
         color: $soyo;
-        @extend %styleOswald
+        @extend %styleOswald;
+        & p:nth-child(2) {
+          margin: 10px 10px 10px 0;
+        }
       }
       & div:nth-of-type(2) {
         display: flex;
         gap: 14px;
         align-items: baseline;
         color: $soyo;
-        @extend %styleOswald
+        @extend %styleOswald;
+        & p:nth-child(2) {
+          margin: 10px;
+        }
       }
       & p {
         margin: 10px 0 10px 0;
@@ -129,5 +139,15 @@ $soyo: #f8dd10;
         @extend %styleOswald
       }
     }
+  }
+}
+
+
+
+
+
+@media(max-width: 950px) {
+  .Header .Face {
+    @include grid2;
   }
 }

@@ -321,7 +321,7 @@
 }
 .Header .Face {
   display: grid;
-  grid-template-columns: 1fr 1000px 1fr;
+  grid-template-columns: 1fr minmax(565px, 1000px) 1fr;
   grid-template-rows: 75px 75px;
   grid-template-areas: "media logo nomeru" "adresa main nomeru";
 }
@@ -360,11 +360,17 @@
   align-items: end;
   color: #f8dd10;
 }
+.Header .Face .Nomeru div:nth-of-type(1) p:nth-child(2) {
+  margin: 10px 10px 10px 0;
+}
 .Header .Face .Nomeru div:nth-of-type(2) {
   display: flex;
   gap: 14px;
   align-items: baseline;
   color: #f8dd10;
+}
+.Header .Face .Nomeru div:nth-of-type(2) p:nth-child(2) {
+  margin: 10px;
 }
 .Header .Face .Nomeru p {
   margin: 10px 0 10px 0;
@@ -406,4 +412,12 @@
   margin: 25;
   font-size: 24px;
   color: #f8dd10;
+}
+
+@media (max-width: 950px) {
+  .Header .Face {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas: "adresa nomeru nomeru" "media logo logo" "main main main";
+  }
 }/*# sourceMappingURL=globals.css.map */
