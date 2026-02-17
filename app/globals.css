@@ -50,6 +50,9 @@
 }
 .Header .Face .Nomeru {
   grid-area: nomeru;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 .Header .Face .Nomeru div:nth-of-type(1) {
   display: flex;
@@ -69,9 +72,27 @@
 }
 .Header .Face .Media {
   grid-area: media;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: end;
+  padding: 14px 0 0 0;
+}
+.Header .Face .Media img {
+  width: 26px;
+  height: 26px;
+  margin: 10px;
 }
 .Header .Face .Logo {
   grid-area: logo;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.Header .Face .Logo img {
+  position: relative;
+  top: 10px;
+  width: 160px;
+  height: 70px;
 }
 .Header .Face .Main {
   grid-area: main;
