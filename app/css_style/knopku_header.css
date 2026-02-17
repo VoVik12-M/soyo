@@ -10,7 +10,7 @@
 }
 
 .Top {
-  width: 95px;
+  width: 92px;
 }
 
 .efectRight {
@@ -25,7 +25,7 @@
 }
 
 .Right {
-  height: 53px;
+  height: 50px;
 }
 
 .efectBottom {
@@ -35,12 +35,12 @@
   height: 1px;
   transition: width 0.5s ease 0s;
   position: absolute;
-  bottom: 3px;
+  bottom: -8px;
   left: -12px;
 }
 
 .Bottom {
-  width: 95px;
+  width: 92px;
 }
 
 .efectLeft {
@@ -50,12 +50,12 @@
   height: 0;
   transition: height 0.5s ease 0s;
   position: absolute;
-  bottom: -12px;
+  bottom: -21px;
   left: -3px;
 }
 
 .Left {
-  height: 53px;
+  height: 50px;
 }
 
 .efectTop2 {
@@ -70,7 +70,7 @@
 }
 
 .Top2 {
-  width: 138px;
+  width: 135px;
 }
 
 .efectRight2 {
@@ -85,7 +85,7 @@
 }
 
 .Right2 {
-  height: 53px;
+  height: 50px;
 }
 
 .efectBottom2 {
@@ -95,12 +95,12 @@
   height: 1px;
   transition: width 0.5s ease 0s;
   position: absolute;
-  bottom: 3px;
+  bottom: -8px;
   left: -12px;
 }
 
 .Bottom2 {
-  width: 138px;
+  width: 135px;
 }
 
 .efectLeft2 {
@@ -110,12 +110,12 @@
   height: 0;
   transition: height 0.5s ease 0s;
   position: absolute;
-  bottom: -12px;
+  bottom: -21px;
   left: -3px;
 }
 
 .Left2 {
-  height: 53px;
+  height: 50px;
 }
 
 .efectTop3 {
@@ -130,7 +130,7 @@
 }
 
 .Top3 {
-  width: 134px;
+  width: 131px;
 }
 
 .efectRight3 {
@@ -145,7 +145,7 @@
 }
 
 .Right3 {
-  height: 53px;
+  height: 50px;
 }
 
 .efectBottom3 {
@@ -155,12 +155,12 @@
   height: 1px;
   transition: width 0.5s ease 0s;
   position: absolute;
-  bottom: 3px;
+  bottom: -8px;
   left: -12px;
 }
 
 .Bottom3 {
-  width: 134px;
+  width: 131px;
 }
 
 .efectLeft3 {
@@ -170,12 +170,12 @@
   height: 0;
   transition: height 0.5s ease 0s;
   position: absolute;
-  bottom: -12px;
+  bottom: -21px;
   left: -3px;
 }
 
 .Left3 {
-  height: 53px;
+  height: 50px;
 }
 
 .efectTop4 {
@@ -190,7 +190,7 @@
 }
 
 .Top4 {
-  width: 76px;
+  width: 73px;
 }
 
 .efectRight4 {
@@ -205,7 +205,7 @@
 }
 
 .Right4 {
-  height: 53px;
+  height: 50px;
 }
 
 .efectBottom4 {
@@ -215,12 +215,12 @@
   height: 1px;
   transition: width 0.5s ease 0s;
   position: absolute;
-  bottom: 3px;
+  bottom: -8px;
   left: -12px;
 }
 
 .Bottom4 {
-  width: 76px;
+  width: 73px;
 }
 
 .efectLeft4 {
@@ -230,12 +230,12 @@
   height: 0;
   transition: height 0.5s ease 0s;
   position: absolute;
-  bottom: -12px;
+  bottom: -21px;
   left: -3px;
 }
 
 .Left4 {
-  height: 53px;
+  height: 50px;
 }
 
 .efectTop5 {
@@ -250,7 +250,7 @@
 }
 
 .Top5 {
-  width: 95px;
+  width: 85px;
 }
 
 .efectRight5 {
@@ -265,7 +265,7 @@
 }
 
 .Right5 {
-  height: 53px;
+  height: 50px;
 }
 
 .efectBottom5 {
@@ -275,12 +275,12 @@
   height: 1px;
   transition: width 0.5s ease 0s;
   position: absolute;
-  bottom: 3px;
+  bottom: -8px;
   left: -12px;
 }
 
 .Bottom5 {
-  width: 95px;
+  width: 85px;
 }
 
 .efectLeft5 {
@@ -290,10 +290,10 @@
   height: 0;
   transition: height 0.5s ease 0s;
   position: absolute;
-  bottom: -12px;
+  bottom: -21px;
   left: -3px;
 }
 
 .Left5 {
-  height: 53px;
+  height: 50px;
 }/*# sourceMappingURL=knopku_header.css.map */
