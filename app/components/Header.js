@@ -4,6 +4,10 @@ import { useRef, useState } from "react";
 
 export default function Header() {
     const viasan = "(Віасан)";
+    const [posul, setPosul] = useState(false);
+    const [posul2, setPosul2] = useState(false);
+    const [posul3, setPosul3] = useState(false);
+    const [posul4, setPosul4] = useState(false);
 
     // Картинки
     // Жовті
@@ -16,6 +20,10 @@ export default function Header() {
     const instagramG = "/logo_grey/instagram_grey.png";
     const telegramG = "/logo_grey/telegram_grey.png";
     const tik_tokG ="/logo_grey/tik-tok_grey.png";
+
+    // Посилання
+    const instagram_a = "https://www.instagram.com/soy_yo_dance?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    const tik_tok_a = "https://www.tiktok.com/@soy_yo_dance?_r=1&_t=ZS-93o8MEBAKNI"
 
     // Для кнопки СТИЛІ
     const ef_top = useRef();
@@ -137,10 +145,30 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="Media">
-                    <img src={homeY}/>
-                    <img src={instagramY}/>
-                    <img src={telegramY}/>
-                    <img src={tik_tokY}/>
+                    <a href="">
+                        <img src={posul? homeG : homeY}
+                        onMouseEnter={()=>setPosul(true)}
+                        onMouseLeave={()=>setPosul(false)}
+                        alt="logo"/>
+                    </a>
+                    <a href={instagram_a} target="_blank" rel="noopener noreferrer">
+                        <img src={posul2? instagramG : instagramY}
+                            onMouseEnter={()=>setPosul2(true)}
+                            onMouseLeave={()=>setPosul2(false)}
+                        alt="logo"/>
+                    </a>
+                    <a href="">
+                        <img src={posul3? telegramG : telegramY}
+                        onMouseEnter={()=>setPosul3(true)}
+                        onMouseLeave={()=>setPosul3(false)}
+                        alt="logo"/>
+                    </a>
+                    <a href={tik_tok_a} target="_blank" rel="noopener noreferrer">
+                        <img src={posul4? tik_tokG : tik_tokY}
+                        onMouseEnter={()=>setPosul4(true)}
+                        onMouseLeave={()=>setPosul4(false)}
+                        alt="logo"/>
+                    </a>
                 </div>
                 <div className="Logo">
                     <img src='/img/Logo.png' alt="logo"/>
