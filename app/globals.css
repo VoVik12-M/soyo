@@ -417,7 +417,60 @@
 @media (max-width: 950px) {
   .Header .Face {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px 50px;
+    grid-template-rows: 30px 60px 60px;
     grid-template-areas: "adresa nomeru nomeru" "media logo logo" "main main main";
+  }
+  .Header .Face .Adresa {
+    padding: 0;
+    justify-content: center;
+    background: #f8dd10;
+  }
+  .Header .Face .Adresa div {
+    box-sizing: border-box;
+    flex-direction: row;
+    bottom: 0;
+    padding: 2px 0 0 0;
+  }
+  .Header .Face .Adresa p {
+    color: #808080;
+    font-size: 17px;
+  }
+  .Header .Face .Adresa p:nth-of-type(1) {
+    margin: 0 10px 0 0;
+  }
+  .Header .Face .Adresa p:nth-of-type(2) {
+    margin: 0 10px 0 0;
+  }
+  .Header .Face .Nomeru {
+    background: #f8dd10;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .Header .Face .Nomeru p {
+    color: #808080;
+  }
+  .Header .Face .Nomeru div:nth-of-type(1) {
+    align-items: baseline;
+    justify-content: end;
+    box-sizing: border-box;
+    padding: 0 10px 0 0;
+  }
+  .Header .Face .Nomeru div:nth-of-type(1) p:nth-of-type(1) {
+    margin: 0;
+  }
+  .Header .Face .Nomeru div:nth-of-type(1) p:nth-of-type(2) {
+    margin: 0;
+  }
+  .Header .Face .Nomeru div:nth-of-type(2) {
+    align-items: baseline;
+    justify-content: end;
+    box-sizing: border-box;
+    padding: 0 10px 0 0;
+  }
+  .Header .Face .Nomeru div:nth-of-type(2) p:nth-of-type(1) {
+    margin: 0;
+  }
+  .Header .Face .Nomeru div:nth-of-type(2) p:nth-of-type(2) {
+    margin: 0;
   }
 }/*# sourceMappingURL=globals.css.map */

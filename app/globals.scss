@@ -5,6 +5,7 @@
 
 // Кольори
 $soyo: #f8dd10;
+$soyG: #808080;
 
 // Шаблони
 %styleOswald{
@@ -24,7 +25,7 @@ $soyo: #f8dd10;
 
 @mixin grid2 {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px 50px;
+  grid-template-rows: 30px 60px 60px;
       grid-template-areas: 
     "adresa nomeru nomeru"
     "media logo logo"
@@ -142,12 +143,65 @@ $soyo: #f8dd10;
   }
 }
 
-
-
-
+// ______________________Верстка______________________________
 
 @media(max-width: 950px) {
   .Header .Face {
     @include grid2;
+    & .Adresa {
+      padding: 0;
+      justify-content:center;
+      background: $soyo;
+      & div {
+        box-sizing: border-box;
+        flex-direction: row;
+        bottom: 0;
+        padding: 2px 0 0 0 ;
+      }
+      & p {
+        color: $soyG;
+        font-size: 17px;
+      }
+      & p:nth-of-type(1) {
+        margin: 0 10px 0 0;
+      }
+      & p:nth-of-type(2) {
+        margin: 0 10px 0 0;
+      }
+    }
+    & .Nomeru {
+      background: $soyo;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      & p {
+        color: $soyG;
+      }
+      & div:nth-of-type(1) {
+        align-items: baseline;
+        justify-content: end;
+        box-sizing: border-box;
+        padding: 0 10px 0 0;
+        & p:nth-of-type(1) {
+          margin: 0;
+        }
+        & p:nth-of-type(2) {
+          margin: 0;
+        }
+      }
+      & div:nth-of-type(2) {
+        align-items: baseline;
+        justify-content: end;
+        box-sizing: border-box;
+        padding: 0 10px 0 0;
+        & p:nth-of-type(1) {
+          margin: 0;
+        }
+        & p:nth-of-type(2) {
+          margin: 0;
+        }
+      }
+    }
   }
+
+
 }
