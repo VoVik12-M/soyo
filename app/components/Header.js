@@ -137,7 +137,7 @@ export default function Header() {
                 <div className="Nomeru">
                     <div>
                         <p>Назар:</p>
-                        <p>+380980466115 |</p>
+                        <p>+380980466115</p>
                     </div>
                     <div>
                         <p>Катя:</p>

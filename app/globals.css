@@ -416,14 +416,16 @@
 
 @media (max-width: 950px) {
   .Header .Face {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(280px, 1fr) 200px 200px;
     grid-template-rows: 30px 60px 60px;
     grid-template-areas: "adresa nomeru nomeru" "media logo logo" "main main main";
   }
   .Header .Face .Adresa {
     padding: 0;
-    justify-content: center;
+    justify-content: flex-start;
     background: #f8dd10;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
   }
   .Header .Face .Adresa div {
     box-sizing: border-box;
@@ -443,7 +445,7 @@
   }
   .Header .Face .Nomeru {
     background: #f8dd10;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
     grid-template-rows: 1fr;
   }
   .Header .Face .Nomeru p {
@@ -453,7 +455,6 @@
     align-items: baseline;
     justify-content: end;
     box-sizing: border-box;
-    margin: 0 -115px 0 0;
   }
   .Header .Face .Nomeru div:nth-of-type(1) p:nth-of-type(1) {
     margin: 0;
@@ -479,10 +480,16 @@
   .Header .Face .Logo {
     box-sizing: border-box;
     place-items: baseline;
-    padding: 0 0 0 50px;
+  }
+  .Header .Face .Logo img {
+    right: 180px;
+    right: calc(1px + 179 * (100vw - 680px) / 270);
   }
   .Header .Face .Main {
     justify-content: space-evenly;
+  }
+  .Header .Face .Main a {
+    margin-top: 20px;
   }
   .Top, .Top2, .Top3, .Top4, .Top5,
   .Right, .Right2, .Right3, .Right4, .Right5,

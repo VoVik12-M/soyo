@@ -24,7 +24,7 @@ $soyG: #808080;
 }
 
 @mixin grid2 {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: minmax(280px, 1fr) 200px 200px;
   grid-template-rows: 30px 60px 60px;
       grid-template-areas: 
     "adresa nomeru nomeru"
@@ -150,8 +150,10 @@ $soyG: #808080;
     @include grid2;
     & .Adresa {
       padding: 0;
-      justify-content:center;
+      justify-content:flex-start;
       background: $soyo;
+      box-sizing: border-box;
+      padding: 0 0 0 10px;
       & div {
         box-sizing: border-box;
         flex-direction: row;
@@ -171,7 +173,7 @@ $soyG: #808080;
     }
     & .Nomeru {
       background: $soyo;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
       grid-template-rows: 1fr;
       & p {
         color: $soyG;
@@ -180,7 +182,6 @@ $soyG: #808080;
         align-items: baseline;
         justify-content: end;
         box-sizing: border-box;
-        margin: 0 -115px 0 0;
         & p:nth-of-type(1) {
           margin: 0;
         }
@@ -207,10 +208,16 @@ $soyG: #808080;
     & .Logo {
       box-sizing: border-box;
       place-items: baseline;
-      padding: 0 0 0 50px;
+      & img {
+        right: 180px;
+        right: calc(1px + (180 - 1) * ((100vw - 680px) / (950 - 680)));
+      }
     }
     & .Main {
       justify-content: space-evenly;
+      & a {
+        margin-top: 20px;
+      }
     }
   }
 
