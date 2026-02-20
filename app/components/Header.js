@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import FacePhone from "./FacePhone";
 
 export default function Header() {
     const viasan = "(Віасан)";
@@ -126,6 +127,7 @@ export default function Header() {
 
     return (
         <div className="Header">
+            <FacePhone />
             <div className="Face">
                 <div className="Adresa">
                     <div>

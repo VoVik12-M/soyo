@@ -1,4 +1,5 @@
 @use "./css_style/knopku_header";
+@import "./css_style/FacePhoneStyle.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
@@ -30,6 +31,10 @@ $soyG: #808080;
     "adresa nomeru nomeru"
     "media logo logo"
     "main main main";
+}
+
+body {
+  margin: 0;
 }
 
 // Блок Голова
@@ -146,6 +151,9 @@ $soyG: #808080;
 // ______________________Верстка______________________________
 
 @media(max-width: 950px) {
+  .Header {
+    position: static
+  }
   .Header .Face {
     @include grid2;
     & .Adresa {
@@ -228,4 +236,16 @@ $soyG: #808080;
     display: none;
   }
 
+}
+
+@media(max-width: 679px) {
+  .Header {
+    height: 60px;
+    & .Face {
+      display: none;
+    }
+    & .FacePh {
+      display: block;
+    }
+  }
 }

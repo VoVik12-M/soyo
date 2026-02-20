@@ -299,11 +299,22 @@
   height: 50px;
 }
 
+.FacePh {
+  display: none;
+}
+.FacePh p {
+  color: rgb(18, 211, 121);
+}
+
 .Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+body {
+  margin: 0;
 }
 
 .Osnova {
@@ -415,6 +426,9 @@
 }
 
 @media (max-width: 950px) {
+  .Header {
+    position: static;
+  }
   .Header .Face {
     grid-template-columns: minmax(280px, 1fr) 200px 200px;
     grid-template-rows: 30px 60px 60px;
@@ -496,5 +510,16 @@
   .Bottom, .Bottom2, .Bottom3, .Bottom4, .Bottom5,
   .Left, .Left2, .Left3, .Left4, .Left5 {
     display: none;
+  }
+}
+@media (max-width: 679px) {
+  .Header {
+    height: 60px;
+  }
+  .Header .Face {
+    display: none;
+  }
+  .Header .FacePh {
+    display: block;
   }
 }/*# sourceMappingURL=globals.css.map */
