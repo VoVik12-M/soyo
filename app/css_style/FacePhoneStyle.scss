@@ -1,6 +1,82 @@
+$soyo: #f8dd10;
+
+
 .FacePh {
     display: none;
-    & p {
-        color: rgb(18, 211, 121);
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
+    padding: 5px;
+    & div:nth-of-type(1) {
+        display: flex;
+        & .ham-menu.active span:nth-child(1) {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        & .ham-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+        & .ham-menu.active span:nth-child(3) {
+            top: 50%;
+            transform: translate(-50%, -47%) rotate(-45deg);
+        }
+        & .ham-menu {
+            height: 50px;
+            width: 50px;
+            margin-right: auto;
+            position: relative;
+            & span {
+                height: 5px;
+                width: 100%;
+                background: $soyo;
+                border-radius: 25px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: .3s ease;
+            }
+            & span:nth-of-type(1) {
+                top: 25%;
+            }
+            & span:nth-of-type(2) {
+                top: 50%;
+            }
+            & span:nth-of-type(3) {
+                top: 75%;
+            }
+        }
+    }
+    & div:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+        & img {
+            width: 100px;
+            height: 50px;
+        }
+    }
+    & div:nth-of-type(3) {
+        display: flex;
+        justify-content: end;
+        box-sizing: border-box;
+        padding: 8px 0 7px 0;
+        & img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    & .contactu {
+        position: fixed;
+        top: 60px;
+        right: 0px;
+        & div:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+        }
+        & div:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
+
+// ___________________ефекти____
