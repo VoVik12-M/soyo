@@ -5,27 +5,27 @@
   box-sizing: border-box;
   padding: 5px;
 }
-.FacePh div:nth-of-type(1) {
+.FacePh .burger {
   display: flex;
 }
-.FacePh div:nth-of-type(1) .ham-menu.active span:nth-child(1) {
+.FacePh .burger .ham-menu.active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
 }
-.FacePh div:nth-of-type(1) .ham-menu.active span:nth-child(2) {
+.FacePh .burger .ham-menu.active span:nth-child(2) {
   opacity: 0;
 }
-.FacePh div:nth-of-type(1) .ham-menu.active span:nth-child(3) {
+.FacePh .burger .ham-menu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -47%) rotate(-45deg);
 }
-.FacePh div:nth-of-type(1) .ham-menu {
+.FacePh .burger .ham-menu {
   height: 50px;
   width: 50px;
   margin-right: auto;
   position: relative;
 }
-.FacePh div:nth-of-type(1) .ham-menu span {
+.FacePh .burger .ham-menu span {
   height: 5px;
   width: 100%;
   background: #f8dd10;
@@ -35,30 +35,30 @@
   transform: translate(-50%, -50%);
   transition: 0.3s ease;
 }
-.FacePh div:nth-of-type(1) .ham-menu span:nth-of-type(1) {
+.FacePh .burger .ham-menu span:nth-of-type(1) {
   top: 25%;
 }
-.FacePh div:nth-of-type(1) .ham-menu span:nth-of-type(2) {
+.FacePh .burger .ham-menu span:nth-of-type(2) {
   top: 50%;
 }
-.FacePh div:nth-of-type(1) .ham-menu span:nth-of-type(3) {
+.FacePh .burger .ham-menu span:nth-of-type(3) {
   top: 75%;
 }
-.FacePh div:nth-of-type(2) {
+.FacePh .logo {
   display: flex;
   justify-content: center;
 }
-.FacePh div:nth-of-type(2) img {
+.FacePh .logo img {
   width: 100px;
   height: 50px;
 }
-.FacePh div:nth-of-type(3) {
+.FacePh .phone {
   display: flex;
   justify-content: end;
   box-sizing: border-box;
   padding: 8px 0 7px 0;
 }
-.FacePh div:nth-of-type(3) img {
+.FacePh .phone img {
   width: 35px;
   height: 35px;
 }
@@ -67,11 +67,54 @@
   top: 60px;
   right: 0px;
 }
-.FacePh .contactu div:nth-of-type(1) {
+.FacePh .contactu .adresa {
+  background: #808080;
+  color: #f8dd10;
   display: flex;
   flex-direction: column;
+  margin: 5px 5px 0 0;
+  box-sizing: border-box;
+  padding: 10px;
 }
-.FacePh .contactu div:nth-of-type(2) {
+.FacePh .contactu .adresa p {
+  margin: 0;
+  text-align: center;
+}
+.FacePh .contactu .nomerNazar {
   display: flex;
   flex-direction: column;
+  margin: 5px 5px 0 0;
+}
+.FacePh .contactu .nomerNazar span:nth-child(1) {
+  background: #f8dd10;
+}
+.FacePh .contactu .nomerNazar span:nth-child(1) p {
+  color: #808080;
+  margin: 0;
+}
+.FacePh .contactu .nomerNazar span:nth-child(2) {
+  background: #808080;
+}
+.FacePh .contactu .nomerNazar span:nth-child(2) p {
+  color: #f8dd10;
+  margin: 0;
+}
+.FacePh .contactu .nomerKate {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px 0 0;
+}
+.FacePh .contactu .nomerKate span:nth-child(1) {
+  background: #f8dd10;
+}
+.FacePh .contactu .nomerKate span:nth-child(1) p {
+  color: #808080;
+  margin: 0;
+}
+.FacePh .contactu .nomerKate span:nth-child(2) {
+  background: #808080;
+}
+.FacePh .contactu .nomerKate span:nth-child(2) p {
+  color: #f8dd10;
+  margin: 0;
 }/*# sourceMappingURL=FacePhoneStyle.css.map */

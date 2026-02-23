@@ -11,26 +11,26 @@ export default function FacePhone() {
 
     return (
         <div className="FacePh">
-            <div>
+            <div className="burger">
                 <div ref={hamMenu} className="ham-menu" onClick={burMenu}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-            <div>
+            <div className="logo">
                 <img src='/img/Logo.png' alt="logo"/>
             </div>
-            <div>
+            <div className="phone">
                 <img src='/img/phone.png' alt="logo"/>
             </div>
             <div className="contactu">
-                <div>
+                <div className="adresa">
                     <p>м. Тернопіль</p>
                     <p>вул. Медова 12</p>
                     <p>{viasan}</p>
                 </div>
-                <div>
+                <div className="nomerNazar">
                     <span>
                         <p>Назар</p>
                     </span>
@@ -38,7 +38,7 @@ export default function FacePhone() {
                         <p>+380980466115</p>
                     </span>
                 </div>
-                <div>
+                <div className="nomerKate">
                     <span>
                         <p>Катя</p>
                     </span>
