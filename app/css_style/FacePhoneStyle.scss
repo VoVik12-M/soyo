@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 $soyo: #f8dd10;
 $soyG: #808080;
 
+%styleOswald{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 
 .FacePh {
     display: none;
@@ -65,10 +73,14 @@ $soyG: #808080;
             height: 35px;
         }
     }
+    & .contactu.active {
+        right: 0;
+    }
     & .contactu {
         position: fixed;
         top: 60px;
-        right: 0px;
+        right: -122px;
+        transition: .1s ease;
         & .adresa {
             background: $soyG;
             color: $soyo;
@@ -80,6 +92,7 @@ $soyG: #808080;
             & p {
                 margin: 0;
                 text-align: center;
+                @extend %styleOswald;
             }
         }
         & .nomerNazar {
@@ -91,6 +104,9 @@ $soyG: #808080;
                 & p {
                     color: $soyG;
                     margin: 0;
+                    text-align: center;
+                    @extend %styleOswald;
+                    box-sizing: border-box;
                 }
             }
             & span:nth-child(2) {
@@ -98,6 +114,9 @@ $soyG: #808080;
                 & p {
                     color: $soyo;
                     margin: 0;
+                    text-align: center;
+                    @extend %styleOswald;
+                    box-sizing: border-box;
                 }
             }
         }
@@ -110,6 +129,9 @@ $soyG: #808080;
                 & p {
                     color: $soyG;
                     margin: 0;
+                    text-align: center;
+                    @extend %styleOswald;
+                    box-sizing: border-box;
                 }
             }
             & span:nth-child(2) {
@@ -117,6 +139,9 @@ $soyG: #808080;
                 & p {
                     color: $soyo;
                     margin: 0;
+                    text-align: center;
+                    @extend %styleOswald;
+                    box-sizing: border-box;
                 }
             }
         }

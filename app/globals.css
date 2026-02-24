@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 .efectTop {
   background: #f8dd10;
   border-radius: 10px;
@@ -299,6 +300,13 @@
   height: 50px;
 }
 
+.Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .adresa p {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .FacePh {
   display: none;
   grid-template-columns: 1fr 1fr 1fr;
@@ -363,10 +371,14 @@
   width: 35px;
   height: 35px;
 }
+.FacePh .contactu.active {
+  right: 0;
+}
 .FacePh .contactu {
   position: fixed;
   top: 60px;
-  right: 0px;
+  right: -122px;
+  transition: 0.1s ease;
 }
 .FacePh .contactu .adresa {
   background: #808080;
@@ -392,6 +404,8 @@
 .FacePh .contactu .nomerNazar span:nth-child(1) p {
   color: #808080;
   margin: 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 .FacePh .contactu .nomerNazar span:nth-child(2) {
   background: #808080;
@@ -399,6 +413,8 @@
 .FacePh .contactu .nomerNazar span:nth-child(2) p {
   color: #f8dd10;
   margin: 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 .FacePh .contactu .nomerKate {
   display: flex;
@@ -411,6 +427,8 @@
 .FacePh .contactu .nomerKate span:nth-child(1) p {
   color: #808080;
   margin: 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 .FacePh .contactu .nomerKate span:nth-child(2) {
   background: #808080;
@@ -418,9 +436,11 @@
 .FacePh .contactu .nomerKate span:nth-child(2) p {
   color: #f8dd10;
   margin: 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p {
+.Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .contactu .adresa p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerKate span:nth-child(2) p {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;

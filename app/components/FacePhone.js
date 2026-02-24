@@ -4,10 +4,16 @@ import { useRef, useState } from "react";
 
 export default function FacePhone() {
     const viasan = "(Віасан)";
+
     const hamMenu = useRef();
     function burMenu() {
         hamMenu.current.classList.toggle('active');
     };
+
+    const rightMenu = useRef();
+    function contmenu () {
+        rightMenu.current.classList.toggle('active');
+    }
 
     return (
         <div className="FacePh">
@@ -22,9 +28,9 @@ export default function FacePhone() {
                 <img src='/img/Logo.png' alt="logo"/>
             </div>
             <div className="phone">
-                <img src='/img/phone.png' alt="logo"/>
+                <img src='/img/phone.png' alt="logo" onClick={contmenu}/>
             </div>
-            <div className="contactu">
+            <div ref={rightMenu} className="contactu">
                 <div className="adresa">
                     <p>м. Тернопіль</p>
                     <p>вул. Медова 12</p>
