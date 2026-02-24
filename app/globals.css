@@ -300,7 +300,7 @@
   height: 50px;
 }
 
-.Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .adresa p {
+.Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .menu-hm div p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .adresa p {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -376,16 +376,18 @@
 }
 .FacePh .contactu {
   position: fixed;
-  top: 60px;
+  top: 65px;
   right: -122px;
   transition: 0.1s ease;
+  overflow-y: scroll;
+  bottom: 5px;
 }
 .FacePh .contactu .adresa {
   background: #808080;
   color: #f8dd10;
   display: flex;
   flex-direction: column;
-  margin: 5px 5px 0 0;
+  margin: 0 5px 0 0;
   box-sizing: border-box;
   padding: 10px;
 }
@@ -439,8 +441,51 @@
   text-align: center;
   box-sizing: border-box;
 }
+.FacePh .menu-hm.active {
+  left: 0;
+}
+.FacePh .menu-hm {
+  position: fixed;
+  background: #808080;
+  top: 60px;
+  left: -679;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  bottom: 0;
+  transition: 0.2s ease;
+}
+.FacePh .menu-hm div {
+  background: #f8dd10;
+  margin: 0 0 2px 0;
+  height: 42px;
+  box-sizing: border-box;
+}
+.FacePh .menu-hm div p {
+  text-align: center;
+  font-size: 18px;
+  color: #808080;
+}
+.FacePh .menu-hm div p:nth-of-type(1) {
+  font-weight: 700;
+  margin: 8px 0 8px 0;
+}
+.FacePh .menu-hm .row-logo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 0 0 0;
+}
+.FacePh .menu-hm .row-logo img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
 
-.Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .contactu .adresa p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerKate span:nth-child(2) p {
+.Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .contactu .adresa p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .menu-hm div p {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
