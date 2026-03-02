@@ -146,7 +146,7 @@ body {
       }
     }
   }
-}
+};
 
 // ______________________Верстка______________________________
 
@@ -241,6 +241,7 @@ body {
 @media(max-width: 679px) {
   .Header {
     height: 60px;
+    position: fixed;
     & .Face {
       display: none;
     }
@@ -248,4 +249,69 @@ body {
       display: grid;
     }
   }
+}
+
+// ______________________Блок Home_____________
+
+// ______________________Aside_________________
+.Aside {
+  background: url('/img/photo.png');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding-top: 400px;
+  & p {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    @extend %styleOswald
+  }
+};
+
+// __________________AsideTwo_________________
+
+.AsideTwo {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  & >p:nth-of-type(1) {
+    text-align: center;
+    margin: 30px 0 0 0;
+    font-size: 30px;
+    @extend %styleOswald;
+    font-weight: 300;
+  };
+  & .NovunuAkchii {
+    display: flex;
+    justify-content: center;
+    & div {
+      width: 230px;
+      height: 250px;
+      background: black;
+      margin: 5px;
+    }
+  };
+  & .Akchia {
+    display: flex;
+    flex-direction: column;
+    & p {
+      text-align: center;
+      margin: 0;
+      @extend %styleOswald;
+    }
+    & p:nth-of-type(1) {
+      font-weight: 400;
+      font-size: 18px;
+      color: red;
+    }
+  };
+};
+
+// _______________footer_____________
+
+.Footer {
+  background: $soyG;
 }

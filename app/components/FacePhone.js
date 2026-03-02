@@ -17,6 +17,7 @@ export default function FacePhone() {
     function contmenu () {
         rightMenu.current.classList.toggle('active');
         leftmenu.current.classList.remove('active');
+        hamMenu.current.classList.remove('active');
     }
 
     return (
