@@ -745,8 +745,27 @@ body {
 .AsideTwo .NovunuAkchii div {
   width: 230px;
   height: 250px;
-  background: black;
   margin: 5px;
+}
+.AsideTwo .NovunuAkchii div:nth-of-type(1) {
+  background: url("/img/photo_new1.png");
+  background-size: cover;
+}
+.AsideTwo .NovunuAkchii div:nth-of-type(2) {
+  background: url("/img/photo_new2.png");
+  background-size: cover;
+}
+.AsideTwo .NovunuAkchii div:nth-of-type(3) {
+  background: url("/img/photo_new3.png");
+  background-size: cover;
+}
+.AsideTwo .NovunuAkchii div:nth-of-type(4) {
+  background: url("/img/photo_new4.png");
+  background-size: cover;
+}
+.AsideTwo .NovunuAkchii div:nth-of-type(5) {
+  background: url("/img/photo_new5.png");
+  background-size: cover;
 }
 .AsideTwo .Akchia {
   display: flex;
@@ -762,15 +781,42 @@ body {
   color: red;
 }
 
-.new1 {
-  background: rgba(236, 10, 10, 0.4352941176);
+.new {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  background: rgba(255, 246, 246, 0.7882352941);
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: scroll;
+  bottom: 0;
+}
+.new p {
+  width: 650px;
+  background: white;
+  margin: 0;
+  padding: 18px;
 }
 
+.del {
+  display: none;
+}
+
+@media (max-width: 685px) {
+  .new {
+    width: 100%;
+  }
+  .new img {
+    width: 100%;
+  }
+  .new p {
+    width: 100%;
+  }
+}
 .Footer {
   background: #808080;
   color: white;
