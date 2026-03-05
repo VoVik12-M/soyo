@@ -159,7 +159,7 @@ export default function Header() {
                             onMouseLeave={()=>setPosul2(false)}
                         alt="logo"/>
                     </a>
-                    <a href="">
+                    <a>
                         <img src={posul3? telegramG : telegramY}
                         onMouseEnter={()=>setPosul3(true)}
                         onMouseLeave={()=>setPosul3(false)}

@@ -300,7 +300,8 @@
   height: 50px;
 }
 
-.Footer, .AsideTwo .Akchia p, .AsideTwo > p:nth-of-type(1), .Aside p, .Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .menu-hm div p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .adresa p {
+.Chinu1 span,
+.Chinu2 span, .China h1, .Footer, .AsideTwo .Akchia p, .AsideTwo > p:nth-of-type(1), .Aside p, .Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .menu-hm div p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .adresa p {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -485,7 +486,8 @@
   margin: 10px;
 }
 
-.Footer, .AsideTwo .Akchia p, .AsideTwo > p:nth-of-type(1), .Aside p, .Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .contactu .adresa p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .menu-hm div p {
+.Chinu1 span,
+.Chinu2 span, .China h1, .Footer, .AsideTwo .Akchia p, .AsideTwo > p:nth-of-type(1), .Aside p, .Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .contactu .adresa p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .menu-hm div p {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -767,6 +769,9 @@ body {
   background: url("/img/photo_new5.png");
   background-size: cover;
 }
+.AsideTwo .NovunuAkchii div:hover {
+  margin-top: 0;
+}
 .AsideTwo .Akchia {
   display: flex;
   flex-direction: column;
@@ -823,4 +828,69 @@ body {
   box-sizing: border-box;
   padding: 10px;
   font-weight: 300;
+}
+
+.Stuli {
+  margin: 150px 0 0 0;
+}
+
+.China {
+  margin: 150px 0 0 0;
+  background: #4b4a4a;
+}
+.China h1 {
+  display: flex;
+  justify-content: center;
+  color: #f8dd10;
+  font-size: 30px;
+  margin: 16px 0 16px 0;
+  text-align: center;
+}
+
+.Chinu1,
+.Chinu2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Chinu1 span,
+.Chinu2 span {
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+  background: #808080;
+  display: flex;
+  flex-direction: column;
+  border: 10px solid #f8dd10;
+  border-radius: 15px;
+}
+.Chinu1 span p,
+.Chinu2 span p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 36px;
+}
+.Chinu1 span p:nth-of-type(1),
+.Chinu2 span p:nth-of-type(1) {
+  height: 225px;
+  color: #f8dd10;
+}
+.Chinu1 span p:nth-of-type(2),
+.Chinu2 span p:nth-of-type(2) {
+  background: #f8dd10;
+  height: 75px;
+}
+
+@media (max-width: 950px) {
+  .China {
+    margin: 0;
+  }
+}
+@media (max-width: 679px) {
+  .China {
+    margin: 60px 0 0 0;
+  }
 }/*# sourceMappingURL=globals.css.map */
