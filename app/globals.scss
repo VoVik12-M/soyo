@@ -399,22 +399,63 @@ body {
   }
 }
 
-// _______________footer_____________
-
-.Footer {
-  background: $soyG;
-  color: white;
-  box-sizing: border-box;
-  padding: 10px;
-  @extend %styleOswald;
-  font-weight: 300;
-};
-
 //_______________________Блок Stuli___________
 
 .Stuli {
   margin: 150px 0 0 0;
 }
+
+// _____________________Блок Pedagogu________________
+
+.Pedagogu {
+  margin: 150px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  & h1 {
+    @include text_zagolovok;
+  };
+  & div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 15px 0;
+    justify-content: center;
+    & span {
+      border: 10px solid $soyo;
+      margin: 5px;
+      border-radius: 5px;
+      background: $soyo;
+      & img {
+        width: 480px;
+      } 
+      & p {
+        @extend %styleOswald;
+        text-align: center;
+        font-size: 60px;
+        margin: 5px;
+      }
+    }
+  }
+}
+
+// ____________________Верстка___________________
+
+@media (max-width: 950px) {
+  .Pedagogu {
+    margin: 0;
+  }
+};
+
+@media (max-width: 505px) {
+  .Pedagogu div span img {
+    width: 100%;
+  }
+};
+
+@media (max-width: 679px) {
+  .Pedagogu {
+    margin: 60px 0 0 0;
+  }
+};
 
 // _______________________Блок Rozklad_______________
 
@@ -478,6 +519,20 @@ body {
     };
   }
 }
+
+// ________________Верстка__________________
+
+@media (max-width: 950px) {
+  .Rozklad {
+    margin: 0;
+  }
+};
+
+@media (max-width: 679px) {
+  .Rozklad {
+    margin: 60px 0 0 0;
+  }
+};
 
 // _______________________Блок Zal_______________
 
@@ -572,4 +627,15 @@ body {
   .China {
     margin: 60px 0 0 0;
   }
+};
+
+// _______________footer_____________
+
+.Footer {
+  background: $soyG;
+  color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  @extend %styleOswald;
+  font-weight: 300;
 };
