@@ -301,7 +301,7 @@
 }
 
 .Chinu1 span,
-.Chinu2 span, .China h1, .Zal h1, .Footer, .AsideTwo .Akchia p, .AsideTwo > p:nth-of-type(1), .Aside p, .Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .menu-hm div p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .adresa p {
+.Chinu2 span, .China h1, .Zal h1, .Tablucha, .Rozklad h1, .Footer, .AsideTwo .Akchia p, .AsideTwo > p:nth-of-type(1), .Aside p, .Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .menu-hm div p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .adresa p {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -487,7 +487,7 @@
 }
 
 .Chinu1 span,
-.Chinu2 span, .China h1, .Zal h1, .Footer, .AsideTwo .Akchia p, .AsideTwo > p:nth-of-type(1), .Aside p, .Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .contactu .adresa p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .menu-hm div p {
+.Chinu2 span, .China h1, .Zal h1, .Tablucha, .Rozklad h1, .Footer, .AsideTwo .Akchia p, .AsideTwo > p:nth-of-type(1), .Aside p, .Header .Face .Main a, .Header .Face .Nomeru div:nth-of-type(2), .Header .Face .Nomeru div:nth-of-type(1), .Header .Face .Adresa p, .FacePh .contactu .adresa p, .FacePh .contactu .nomerNazar span:nth-child(1) p, .FacePh .contactu .nomerNazar span:nth-child(2) p, .FacePh .contactu .nomerKate span:nth-child(1) p, .FacePh .contactu .nomerKate span:nth-child(2) p, .FacePh .menu-hm div p {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -496,11 +496,14 @@
 
 body {
   margin: 0;
+  background: #4b4a4a;
 }
 
 .Osnova {
-  display: flex;
   flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .Header {
@@ -732,6 +735,7 @@ body {
   padding: 0 0 10px 0;
   display: flex;
   flex-direction: column;
+  background: white;
 }
 .AsideTwo > p:nth-of-type(1) {
   text-align: center;
@@ -832,6 +836,71 @@ body {
 
 .Stuli {
   margin: 150px 0 0 0;
+}
+
+.Rozklad {
+  margin: 150px 0 0 0;
+  background: #4b4a4a;
+  display: flex;
+  flex-direction: column;
+}
+.Rozklad h1 {
+  display: flex;
+  justify-content: center;
+  color: #f8dd10;
+  font-size: 30px;
+  margin: 16px 0 16px 0;
+  text-align: center;
+}
+
+.Tablucha {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 0 0 0;
+}
+.Tablucha span {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #f8dd10;
+  margin: 5px;
+  border-radius: 5px;
+  max-width: 325px;
+}
+.Tablucha span p {
+  text-align: center;
+  margin: 0;
+}
+.Tablucha span p:nth-of-type(1) {
+  background: #f8dd10;
+  font-size: 72px;
+  padding: 5px 20px 0 20px;
+}
+.Tablucha span p:nth-of-type(2) {
+  background: #f8dd10;
+  font-size: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+.Tablucha span p:nth-of-type(3) {
+  color: #f8dd10;
+  font-size: 24px;
+  margin-top: 30px;
+}
+.Tablucha span p:nth-of-type(4) {
+  color: #f8dd10;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.Tablucha span p:nth-of-type(5) {
+  color: #f8dd10;
+  font-size: 24px;
+}
+.Tablucha span p:nth-of-type(6) {
+  color: #f8dd10;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .Zal {

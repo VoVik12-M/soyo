@@ -13,7 +13,8 @@ export default function Home() {
         <Header />
         {/* <Hom /> */}
         {/* <Stuli /> */}
-        <Zal />
+        <Rozklad />
+        {/* <Zal /> */}
         {/* <China /> */}
         <Pidval />
     </div>
