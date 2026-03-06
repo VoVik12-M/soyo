@@ -7,6 +7,7 @@
 // Кольори
 $soyo: #f8dd10;
 $soyG: #808080;
+$soyFon: #4b4a4a;
 
 // Шаблони
 %styleOswald{
@@ -31,6 +32,16 @@ $soyG: #808080;
     "adresa nomeru nomeru"
     "media logo logo"
     "main main main";
+}
+
+@mixin text_zagolovok {
+  display: flex;
+  justify-content: center;
+  color: $soyo;
+  @extend %styleOswald;
+  font-size: 30px;
+  margin: 16px 0 16px 0;
+  text-align: center
 }
 
 body {
@@ -401,19 +412,50 @@ body {
   margin: 150px 0 0 0;
 }
 
+// _______________________Блок Zal_______________
+
+.Zal {
+  margin: 150px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  background: $soyFon;
+  & h1 {
+    @include text_zagolovok;
+  }
+  & div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    & img {
+      width: 250px;
+      height: 350px;
+      margin: 10px;
+      border: 2px solid $soyo;
+    }
+  }
+}
+
+// ________________Верстка__________________
+
+@media (max-width: 950px) {
+  .Zal {
+    margin: 0;
+  }
+};
+
+@media (max-width: 679px) {
+  .Zal {
+    margin: 60px 0 0 0;
+  }
+};
+
 // ______________________China_________________
 
 .China {
   margin: 150px 0 0 0;
-  background: #4b4a4a;
+  background: $soyFon;
   & h1 {
-    display: flex;
-    justify-content: center;
-    color: $soyo;
-    @extend %styleOswald;
-    font-size: 30px;
-    margin: 16px 0 16px 0;
-    text-align: center
+    @include text_zagolovok;
   }
 };
 
@@ -463,5 +505,4 @@ body {
   .China {
     margin: 60px 0 0 0;
   }
-}
-
+};
