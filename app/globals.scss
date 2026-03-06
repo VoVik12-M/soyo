@@ -403,7 +403,45 @@ body {
 
 .Stuli {
   margin: 150px 0 0 0;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+  & h1 {
+    @include text_zagolovok;
+    font-size: 60px
+  };
+  & div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+    & p {
+      @extend %styleOswald;
+      margin: 0;
+      color: $soyo;
+    }
+    & p:nth-of-type(1) {
+      font-size: 36px;
+      margin: 0 0 15px 0;
+    }
+  }
+  & div:nth-of-type(2) {
+    border-bottom: 5px solid $soyo;
+    border-top: 5px solid $soyo;
+  }
 }
+
+// ________________Верстка__________________
+
+@media (max-width: 950px) {
+  .Stuli {
+    margin: 0;
+  }
+};
+
+@media (max-width: 679px) {
+  .Stuli {
+    margin: 60px 0 0 0;
+  }
+};
 
 // _____________________Блок Pedagogu________________
 

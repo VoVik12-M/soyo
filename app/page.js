@@ -12,8 +12,8 @@ export default function Home() {
     <div className="Osnova">
         <Header />
         {/* <Hom /> */}
-        {/* <Stuli /> */}
-        <Pedagogu />
+        <Stuli />
+        {/* <Pedagogu /> */}
         {/* <Rozklad /> */}
         {/* <Zal /> */}
         {/* <China /> */}
