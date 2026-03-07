@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import FacePhone from "./FacePhone";
 
-export default function Header() {
+export default function Header({setHom, setStuli, setPedagogu, setRozklad, setZal, setChina}) {
     const viasan = "(Віасан)";
     const [posul, setPosul] = useState(false);
     const [posul2, setPosul2] = useState(false);
@@ -125,9 +125,63 @@ export default function Header() {
         ef_left_5.current.classList.remove("Left5");
     }
 
+// ______________________функція для кнопок меню_____________
+
+    function knopka (nomer) {
+        if(nomer === 1) {
+            setHom(true);
+            setStuli(false);
+            setPedagogu(false);
+            setRozklad(false);
+            setZal(false);
+            setChina(false);
+        }
+        else if(nomer === 2) {
+            setHom(false);
+            setStuli(true);
+            setPedagogu(false);
+            setRozklad(false);
+            setZal(false);
+            setChina(false);
+
+        }
+        else if(nomer === 3) {
+            setHom(false);
+            setStuli(false);
+            setPedagogu(true);
+            setRozklad(false);
+            setZal(false);
+            setChina(false);
+        }
+        else if(nomer === 4) {
+            setHom(false);
+            setStuli(false);
+            setPedagogu(false);
+            setRozklad(true);
+            setZal(false);
+            setChina(false);
+        }
+        else if(nomer === 5) {
+            setHom(false);
+            setStuli(false);
+            setPedagogu(false);
+            setRozklad(false);
+            setZal(true);
+            setChina(false);
+        }
+        else if(nomer === 6) {
+            setHom(false);
+            setStuli(false);
+            setPedagogu(false);
+            setRozklad(false);
+            setZal(false);
+            setChina(true);
+        }
+    }
+
     return (
         <div className="Header">
-            <FacePhone />
+            <FacePhone setHom={setHom} setStuli={setStuli} setPedagogu={setPedagogu} setRozklad={setRozklad} setZal={setZal} setChina={setChina} />
             <div className="Face">
                 <div className="Adresa">
                     <div>
@@ -147,7 +201,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="Media">
-                    <a href="">
+                    <a onClick={()=>knopka(1)}>
                         <img src={posul? homeG : homeY}
                         onMouseEnter={()=>setPosul(true)}
                         onMouseLeave={()=>setPosul(false)}
@@ -176,35 +230,35 @@ export default function Header() {
                     <img src='/img/Logo.png' alt="logo"/>
                 </div>
                 <div className="Main">
-                <a onMouseEnter={efectu} onMouseLeave={efectudel} href="">
+                <a onMouseEnter={efectu} onMouseLeave={efectudel} onClick={()=>knopka(2)}>
                             <span ref={ef_top} className="efectTop"></span>
                             <span ref={ef_right} className="efectRight"></span>
                             <span ref={ef_bottom} className="efectBottom"></span>
                             <span ref={ef_left} className="efectLeft"></span>
                             СТИЛІ
                         </a>
-                        <a onMouseEnter={efectu2} onMouseLeave={efectu2del} href="">
+                        <a onMouseEnter={efectu2} onMouseLeave={efectu2del} onClick={()=>knopka(3)}>
                             <span ref={ef_top_2} className="efectTop2"></span>
                             <span ref={ef_right_2} className="efectRight2"></span>
                             <span ref={ef_bottom_2} className="efectBottom2"></span>
                             <span ref={ef_left_2} className="efectLeft2"></span>
                             ПЕДАГОГИ
                         </a>
-                        <a onMouseEnter={efectu3} onMouseLeave={efectu3del} href="">
+                        <a onMouseEnter={efectu3} onMouseLeave={efectu3del} onClick={()=>knopka(4)}>
                             <span ref={ef_top_3} className="efectTop3"></span>
                             <span ref={ef_right_3} className="efectRight3"></span>
                             <span ref={ef_bottom_3} className="efectBottom3"></span>
                             <span ref={ef_left_3} className="efectLeft3"></span>
                             РОЗКЛАД
                         </a>
-                        <a onMouseEnter={efectu4} onMouseLeave={efectu4del} href="">
+                        <a onMouseEnter={efectu4} onMouseLeave={efectu4del} onClick={()=>knopka(5)}>
                             <span ref={ef_top_4} className="efectTop4"></span>
                             <span ref={ef_right_4} className="efectRight4"></span>
                             <span ref={ef_bottom_4} className="efectBottom4"></span>
                             <span ref={ef_left_4} className="efectLeft4"></span>
                             ЗАЛ
                         </a>
-                        <a onMouseEnter={efectu5} onMouseLeave={efectu5del} href="">
+                        <a onMouseEnter={efectu5} onMouseLeave={efectu5del} onClick={()=>knopka(6)}>
                             <span ref={ef_top_5} className="efectTop5"></span>
                             <span ref={ef_right_5} className="efectRight5"></span>
                             <span ref={ef_bottom_5} className="efectBottom5"></span>

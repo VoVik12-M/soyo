@@ -607,6 +607,7 @@ body {
   margin: 25;
   font-size: 24px;
   color: #f8dd10;
+  cursor: pointer;
 }
 
 @media (max-width: 950px) {
@@ -752,6 +753,7 @@ body {
   width: 230px;
   height: 250px;
   margin: 5px;
+  cursor: pointer;
 }
 .AsideTwo .NovunuAkchii div:nth-of-type(1) {
   background: url("/img/photo_new1.png");

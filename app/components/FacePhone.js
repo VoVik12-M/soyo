@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 
-export default function FacePhone() {
+export default function FacePhone({setHom, setStuli, setPedagogu, setRozklad, setZal, setChina}) {
     const viasan = "(Віасан)";
 
     const hamMenu = useRef();
@@ -19,6 +19,71 @@ export default function FacePhone() {
         leftmenu.current.classList.remove('active');
         hamMenu.current.classList.remove('active');
     }
+
+// ______________________функція для кнопок меню_____________
+
+function knopka (nomer) {
+    if(nomer === 1) {
+        setHom(true);
+        setStuli(false);
+        setPedagogu(false);
+        setRozklad(false);
+        setZal(false);
+        setChina(false);
+        leftmenu.current.classList.remove('active');
+        hamMenu.current.classList.remove('active');
+    }
+    else if(nomer === 2) {
+        setHom(false);
+        setStuli(true);
+        setPedagogu(false);
+        setRozklad(false);
+        setZal(false);
+        setChina(false);
+        leftmenu.current.classList.remove('active');
+        hamMenu.current.classList.remove('active');
+    }
+    else if(nomer === 3) {
+        setHom(false);
+        setStuli(false);
+        setPedagogu(true);
+        setRozklad(false);
+        setZal(false);
+        setChina(false);
+        leftmenu.current.classList.remove('active');
+        hamMenu.current.classList.remove('active');
+    }
+    else if(nomer === 4) {
+        setHom(false);
+        setStuli(false);
+        setPedagogu(false);
+        setRozklad(true);
+        setZal(false);
+        setChina(false);
+        leftmenu.current.classList.remove('active');
+        hamMenu.current.classList.remove('active');
+    }
+    else if(nomer === 5) {
+        setHom(false);
+        setStuli(false);
+        setPedagogu(false);
+        setRozklad(false);
+        setZal(true);
+        setChina(false);
+        leftmenu.current.classList.remove('active');
+        hamMenu.current.classList.remove('active');
+    }
+    else if(nomer === 6) {
+        setHom(false);
+        setStuli(false);
+        setPedagogu(false);
+        setRozklad(false);
+        setZal(false);
+        setChina(true);
+        leftmenu.current.classList.remove('active');
+        hamMenu.current.classList.remove('active');
+    }
+}
 
     return (
         <div className="FacePh">
@@ -59,29 +124,29 @@ export default function FacePhone() {
                 </div>
             </div>
             <div ref={leftmenu} className="menu-hm">
-                <div>
+                <div onClick={()=>knopka(2)}>
                     <p>Стилі</p>
                 </div>
-                <div>
+                <div onClick={()=>knopka(3)}>
                     <p>Педагоги</p>
                 </div>
-                <div>
+                <div onClick={()=>knopka(4)}>
                     <p>Розклад</p>
                 </div>
-                <div>
+                <div onClick={()=>knopka(5)}>
                     <p>Зал</p>
                 </div>
-                <div>
+                <div onClick={()=>knopka(6)}>
                     <p>Ціни</p>
                 </div>
                 <span className="row-logo">
-                    <a href="">
+                    <a onClick={()=>knopka(1)}>
                         <img src="/logo_yellow/home_yellow.png" alt="logo"/>
                     </a>
                     <a href="https://www.instagram.com/soy_yo_dance?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                         <img src="/logo_yellow/instagram_yellow.png" alt="logo"/>
                     </a>
-                    <a href="">
+                    <a>
                         <img src="/logo_yellow/telegram_yellow.png" alt="logo"/>
                     </a>
                     <a href="https://www.tiktok.com/@soy_yo_dance?_r=1&_t=ZS-93o8MEBAKNI" target="_blank" rel="noopener noreferrer">
